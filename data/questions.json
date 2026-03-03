@@ -1,0 +1,332 @@
+[
+  {
+    "id": 1,
+    "difficulty": "easy",
+    "category": "basics",
+    "question": "What is the purpose of the DOCTYPE declaration in HTML?",
+    "correctAnswer": "The DOCTYPE declaration tells the browser which version of HTML the page is written in. It must be the very first line of an HTML document, before the html tag. It ensures the browser renders the page in standards mode rather than quirks mode.",
+    "keywords": ["doctype", "browser", "html version", "standards mode", "quirks mode", "declaration", "rendering"],
+    "followUp": "What happens if you omit the DOCTYPE declaration?",
+    "hint": "Think about how browsers decide how to render a page."
+  },
+  {
+    "id": 2,
+    "difficulty": "easy",
+    "category": "basics",
+    "question": "What is the difference between block-level and inline elements in HTML?",
+    "correctAnswer": "Block-level elements start on a new line and take up the full width available, such as div, p, h1-h6, ul, ol, li, table. Inline elements do not start on a new line and only take up as much width as necessary, such as span, a, img, strong, em.",
+    "keywords": ["block", "inline", "new line", "width", "div", "span", "full width", "necessary"],
+    "followUp": "Can you give examples of both block and inline elements?",
+    "hint": "Consider how elements flow in the document."
+  },
+  {
+    "id": 3,
+    "difficulty": "easy",
+    "category": "attributes",
+    "question": "What is the difference between the 'id' and 'class' attributes in HTML?",
+    "correctAnswer": "The id attribute provides a unique identifier for an element — it must be unique within the entire HTML document and can only be used once per page. The class attribute can be shared by multiple elements, allowing the same styles or behaviors to be applied to a group of elements.",
+    "keywords": ["id", "class", "unique", "multiple", "identifier", "shared", "single", "reuse"],
+    "followUp": "Can an element have both an id and multiple classes?",
+    "hint": "Think about uniqueness vs. reusability."
+  },
+  {
+    "id": 4,
+    "difficulty": "easy",
+    "category": "links",
+    "question": "What are the different values for the 'target' attribute in an anchor tag?",
+    "correctAnswer": "The target attribute in an anchor tag specifies where to open the linked document. Values include: _self (default, opens in the same tab/window), _blank (opens in a new tab/window), _parent (opens in the parent frame), _top (opens in the full body of the window), and a custom frame name.",
+    "keywords": ["target", "anchor", "_self", "_blank", "_parent", "_top", "new tab", "window", "frame"],
+    "followUp": "What security concern should you consider when using target='_blank'?",
+    "hint": "Think about where the linked page opens."
+  },
+  {
+    "id": 5,
+    "difficulty": "easy",
+    "category": "images",
+    "question": "What is the purpose of the 'alt' attribute in an image tag?",
+    "correctAnswer": "The alt attribute provides alternative text for an image if the image cannot be displayed. It is also important for accessibility as screen readers read the alt text to describe images to visually impaired users. It also helps with SEO as search engines use it to understand image content.",
+    "keywords": ["alt", "alternative text", "accessibility", "screen reader", "visually impaired", "image", "SEO", "display"],
+    "followUp": "When should you use an empty alt attribute?",
+    "hint": "Consider both accessibility and SEO."
+  },
+  {
+    "id": 6,
+    "difficulty": "easy",
+    "category": "forms",
+    "question": "What is the difference between GET and POST methods in an HTML form?",
+    "correctAnswer": "GET appends form data to the URL as query parameters, making it visible in the browser address bar and bookmarkable. It is suitable for non-sensitive data like search queries. POST sends form data in the HTTP request body, making it hidden from the URL. It is used for sensitive data like passwords or file uploads and has no size limit restrictions.",
+    "keywords": ["GET", "POST", "URL", "query parameters", "request body", "sensitive", "hidden", "search", "password", "form"],
+    "followUp": "What is the default method if the method attribute is not specified?",
+    "hint": "Think about how data is transmitted."
+  },
+  {
+    "id": 7,
+    "difficulty": "easy",
+    "category": "lists",
+    "question": "What are the different types of lists available in HTML?",
+    "correctAnswer": "HTML provides three types of lists: unordered lists (ul) which display items with bullet points, ordered lists (ol) which display items with numbers or letters in sequence, and definition lists (dl) which contain terms (dt) and their descriptions (dd).",
+    "keywords": ["unordered", "ordered", "definition", "ul", "ol", "dl", "bullet", "numbered", "dt", "dd", "list"],
+    "followUp": "How can you change the bullet style of an unordered list?",
+    "hint": "Think about ul, ol, and dl elements."
+  },
+  {
+    "id": 8,
+    "difficulty": "easy",
+    "category": "tables",
+    "question": "What are the main elements used to create a table in HTML?",
+    "correctAnswer": "The main elements for creating an HTML table are: table (the container), tr (table row), th (table header cell, bold and centered by default), td (table data cell), thead (groups header rows), tbody (groups body rows), tfoot (groups footer rows), caption (provides a title for the table), and colspan/rowspan attributes for spanning cells.",
+    "keywords": ["table", "tr", "th", "td", "thead", "tbody", "tfoot", "row", "cell", "header", "colspan", "rowspan"],
+    "followUp": "How do you merge cells in an HTML table?",
+    "hint": "Think about the different elements that make up a table."
+  },
+  {
+    "id": 9,
+    "difficulty": "easy",
+    "category": "semantic",
+    "question": "What are semantic HTML elements and why are they important?",
+    "correctAnswer": "Semantic HTML elements clearly describe their meaning to both the browser and the developer. Examples include header, footer, nav, main, article, section, aside, figure, and figcaption. They are important for accessibility, SEO, readability, and code maintainability. They help screen readers navigate content and search engines understand page structure.",
+    "keywords": ["semantic", "header", "footer", "nav", "main", "article", "section", "aside", "accessibility", "SEO", "meaning", "structure"],
+    "followUp": "What is the difference between article and section elements?",
+    "hint": "Consider what information these tags convey to browsers and assistive technologies."
+  },
+  {
+    "id": 10,
+    "difficulty": "easy",
+    "category": "basics",
+    "question": "What is the structure of a basic HTML document?",
+    "correctAnswer": "A basic HTML document consists of the DOCTYPE declaration, html root element, head section (containing metadata like title, meta tags, and link tags), and body section (containing the visible content). The head contains information about the document while the body contains what is displayed in the browser.",
+    "keywords": ["DOCTYPE", "html", "head", "body", "title", "meta", "structure", "root", "metadata", "content"],
+    "followUp": "What elements go inside the head tag vs the body tag?",
+    "hint": "Think about the basic skeleton of every HTML page."
+  },
+  {
+    "id": 11,
+    "difficulty": "medium",
+    "category": "forms",
+    "question": "How does HTML5 form validation work and what attributes are used?",
+    "correctAnswer": "HTML5 provides built-in form validation using attributes like required (field must be filled), pattern (validates against a regex), min/max (numeric range), minlength/maxlength (character length), type (email, url, number validate format automatically). The browser displays error messages automatically. You can also use the novalidate attribute to disable built-in validation and the setCustomValidity() method for custom validation messages.",
+    "keywords": ["required", "pattern", "min", "max", "minlength", "maxlength", "validation", "type", "email", "novalidate", "regex", "browser", "built-in"],
+    "followUp": "How can you customize the browser's validation error messages?",
+    "hint": "Think about HTML5 constraint validation API."
+  },
+  {
+    "id": 12,
+    "difficulty": "medium",
+    "category": "meta",
+    "question": "What are meta tags in HTML and what are they used for?",
+    "correctAnswer": "Meta tags are HTML elements that provide metadata about the webpage. They go inside the head element. Common uses include: charset (character encoding like UTF-8), viewport (responsive design settings), description (SEO summary), keywords (SEO), author, robots (crawler instructions like noindex, nofollow), Open Graph tags (social media sharing), and http-equiv for setting HTTP headers. They are not displayed on the page but are read by browsers and search engines.",
+    "keywords": ["meta", "metadata", "charset", "viewport", "description", "robots", "SEO", "Open Graph", "head", "charset", "encoding"],
+    "followUp": "What is the viewport meta tag and why is it important?",
+    "hint": "Think about data that describes the page itself."
+  },
+  {
+    "id": 13,
+    "difficulty": "medium",
+    "category": "accessibility",
+    "question": "What are ARIA attributes and how do they improve web accessibility?",
+    "correctAnswer": "ARIA (Accessible Rich Internet Applications) attributes supplement HTML to help assistive technologies like screen readers understand dynamic content and widgets. Key ARIA attributes include: role (defines the type of element), aria-label (provides a text label), aria-labelledby (references a labeling element), aria-describedby (references descriptive text), aria-hidden (hides elements from screen readers), aria-live (announces dynamic updates), aria-expanded, aria-selected, and aria-disabled for interactive elements.",
+    "keywords": ["ARIA", "accessible", "role", "aria-label", "aria-labelledby", "aria-hidden", "screen reader", "assistive technology", "dynamic", "accessible rich internet applications"],
+    "followUp": "When should you NOT use ARIA attributes?",
+    "hint": "Think about Accessible Rich Internet Applications."
+  },
+  {
+    "id": 14,
+    "difficulty": "medium",
+    "category": "media",
+    "question": "How do you embed video in HTML5 and what attributes does the video element support?",
+    "correctAnswer": "HTML5 provides the video element to embed video content. Key attributes include: src (video source URL), controls (show default player controls), autoplay (start playing automatically), loop (repeat the video), muted (start muted), poster (thumbnail image before playing), width/height (dimensions), preload (none, metadata, or auto). Multiple source elements can be nested inside video for different formats with type attributes for browser compatibility.",
+    "keywords": ["video", "src", "controls", "autoplay", "loop", "muted", "poster", "source", "preload", "HTML5", "format", "mp4"],
+    "followUp": "How do you provide subtitles for a video element?",
+    "hint": "Think about the HTML5 video element and its attributes."
+  },
+  {
+    "id": 15,
+    "difficulty": "medium",
+    "category": "data-attributes",
+    "question": "What are HTML5 data attributes and when should you use them?",
+    "correctAnswer": "HTML5 data attributes allow you to store custom data in HTML elements using the data-* syntax. They provide a way to embed custom data that doesn't have a semantic meaning but is needed by JavaScript or CSS. For example, data-user-id='123'. They are accessible via JavaScript using element.dataset.userId or element.getAttribute('data-user-id'), and can be selected in CSS using attribute selectors like [data-active='true'].",
+    "keywords": ["data attributes", "data-*", "custom data", "dataset", "javascript", "css", "semantic", "store", "attribute"],
+    "followUp": "What are some alternatives to data attributes for storing data?",
+    "hint": "Think about the data- prefix convention."
+  },
+  {
+    "id": 16,
+    "difficulty": "medium",
+    "category": "canvas",
+    "question": "What is the HTML5 Canvas element and how is it used?",
+    "correctAnswer": "The HTML5 Canvas element provides a drawing surface that can be manipulated using JavaScript. It is a bitmap-based rendering surface. You access it using the getContext() method, typically with '2d' for 2D graphics or 'webgl' for 3D. Common 2D operations include drawing shapes (fillRect, strokeRect, arc), paths (beginPath, lineTo, moveTo), text (fillText, strokeText), images (drawImage), and transformations (translate, rotate, scale). Canvas is used for games, data visualization, image editing, and animations.",
+    "keywords": ["canvas", "getContext", "2d", "webgl", "drawing", "fillRect", "arc", "path", "JavaScript", "bitmap", "animation", "rendering"],
+    "followUp": "What is the difference between Canvas and SVG?",
+    "hint": "Think about the JavaScript-based drawing API."
+  },
+  {
+    "id": 17,
+    "difficulty": "medium",
+    "category": "web-storage",
+    "question": "What is the difference between localStorage and sessionStorage in HTML5?",
+    "correctAnswer": "Both localStorage and sessionStorage are Web Storage APIs for storing key-value pairs in the browser. localStorage persists data with no expiration time across browser sessions and tabs. sessionStorage stores data for only the current browser session and is cleared when the tab is closed. Both have a storage limit of about 5-10MB, are synchronous, only store strings, and are accessed via setItem(), getItem(), removeItem(), and clear() methods.",
+    "keywords": ["localStorage", "sessionStorage", "web storage", "persist", "session", "expiration", "browser", "key-value", "setItem", "getItem", "tab", "clear"],
+    "followUp": "What are the security considerations when using Web Storage?",
+    "hint": "Think about data persistence and scope."
+  },
+  {
+    "id": 18,
+    "difficulty": "medium",
+    "category": "iframe",
+    "question": "What is an iframe and what are the security considerations when using it?",
+    "correctAnswer": "An iframe (inline frame) embeds another HTML document within the current page. Security considerations include: clickjacking attacks (mitigated by X-Frame-Options header or CSP frame-ancestors), sandboxing with the sandbox attribute (restricts scripts, forms, popups), using allow attribute to enable specific features, avoiding cross-origin iframes without CORS, and being careful with third-party content. The sandbox attribute values include allow-scripts, allow-forms, allow-same-origin.",
+    "keywords": ["iframe", "inline frame", "sandbox", "clickjacking", "X-Frame-Options", "cross-origin", "embed", "security", "allow-scripts", "CSP"],
+    "followUp": "How does the sandbox attribute restrict iframe capabilities?",
+    "hint": "Think about embedding and cross-origin security."
+  },
+  {
+    "id": 19,
+    "difficulty": "medium",
+    "category": "SVG",
+    "question": "What is SVG in HTML and what are its advantages over raster images?",
+    "correctAnswer": "SVG (Scalable Vector Graphics) is an XML-based format for vector graphics that can be embedded directly in HTML. Advantages include: infinitely scalable without pixelation, smaller file size for simple graphics, can be styled with CSS, manipulated with JavaScript, accessible (text is in the DOM), supports animations via CSS or SMIL, and benefits SEO. SVG is ideal for icons, logos, and illustrations. Inline SVG allows direct DOM access while external SVG files can be referenced with img or object tags.",
+    "keywords": ["SVG", "scalable vector graphics", "vector", "scalable", "CSS", "JavaScript", "DOM", "XML", "animation", "accessible", "resolution independent"],
+    "followUp": "When would you choose Canvas over SVG?",
+    "hint": "Think about what SVG stands for and its XML nature."
+  },
+  {
+    "id": 20,
+    "difficulty": "medium",
+    "category": "HTML5 APIs",
+    "question": "What is the Geolocation API in HTML5 and how is it used?",
+    "correctAnswer": "The HTML5 Geolocation API allows web applications to access the user's geographic location. It uses navigator.geolocation to access the API. The main methods are getCurrentPosition() for a one-time location fix and watchPosition() for continuous updates. Both methods take success callback, error callback, and options parameters. The user must explicitly grant permission before location data is shared. Location data includes latitude, longitude, accuracy, altitude, altitudeAccuracy, heading, and speed.",
+    "keywords": ["geolocation", "navigator.geolocation", "getCurrentPosition", "watchPosition", "latitude", "longitude", "permission", "location", "accuracy"],
+    "followUp": "What happens when a user denies location access?",
+    "hint": "Think about navigator.geolocation and user privacy."
+  },
+  {
+    "id": 21,
+    "difficulty": "hard",
+    "category": "shadow-dom",
+    "question": "What is the Shadow DOM and how does it enable encapsulation in web components?",
+    "correctAnswer": "The Shadow DOM is a web standard that allows you to attach a hidden, encapsulated DOM tree to an element, separate from the main document DOM. It provides style encapsulation (styles don't leak in or out), DOM encapsulation (shadow DOM nodes are not accessible from the main document), and component boundary. Created using element.attachShadow({ mode: 'open' or 'closed' }). Open mode allows external JavaScript to access the shadow DOM via element.shadowRoot. Closed mode denies external access. Shadow DOM is a key part of Web Components along with Custom Elements and HTML Templates.",
+    "keywords": ["Shadow DOM", "encapsulation", "attachShadow", "shadow root", "mode", "open", "closed", "style isolation", "web components", "hidden", "DOM tree"],
+    "followUp": "What is the difference between open and closed shadow DOM modes?",
+    "hint": "Think about encapsulation and the Web Components specification."
+  },
+  {
+    "id": 22,
+    "difficulty": "hard",
+    "category": "web-components",
+    "question": "What are Web Components and what technologies do they consist of?",
+    "correctAnswer": "Web Components are a suite of web platform APIs that allow you to create reusable, encapsulated custom HTML elements. They consist of three main technologies: Custom Elements (define new HTML elements using customElements.define()), Shadow DOM (encapsulate element structure and styles), and HTML Templates (declare inert DOM fragments using template and slot elements for lazy rendering). Web Components work across modern browsers and frameworks, promote code reusability, and follow a component model similar to frameworks like React or Angular but using native browser APIs.",
+    "keywords": ["web components", "custom elements", "shadow DOM", "HTML templates", "customElements.define", "encapsulation", "reusable", "template", "slot", "native", "browser API"],
+    "followUp": "How do you pass data to a custom element?",
+    "hint": "Think about the three pillars of the Web Components specification."
+  },
+  {
+    "id": 23,
+    "difficulty": "hard",
+    "category": "custom-elements",
+    "question": "How do you define a lifecycle callback in a Custom Element?",
+    "correctAnswer": "Custom Elements support lifecycle callbacks as class methods: connectedCallback (called when element is inserted into the DOM), disconnectedCallback (called when removed from DOM), adoptedCallback (called when moved to a new document), attributeChangedCallback(name, oldValue, newValue) (called when observed attributes change). To use attributeChangedCallback, you must define a static observedAttributes getter returning an array of attribute names to watch. Custom elements are defined as ES6 classes extending HTMLElement and registered with customElements.define('tag-name', ClassName).",
+    "keywords": ["connectedCallback", "disconnectedCallback", "adoptedCallback", "attributeChangedCallback", "observedAttributes", "lifecycle", "HTMLElement", "customElements.define", "ES6 class"],
+    "followUp": "What is the difference between connectedCallback and the constructor in custom elements?",
+    "hint": "Think about the class-based API and lifecycle hooks."
+  },
+  {
+    "id": 24,
+    "difficulty": "hard",
+    "category": "service-workers",
+    "question": "What are Service Workers and how do they enable offline functionality?",
+    "correctAnswer": "Service Workers are JavaScript scripts that run in the background, separate from the web page, acting as a network proxy. They enable: offline functionality by caching resources (using Cache API), background sync, push notifications, and interception of network requests (fetch event). They follow a lifecycle: install, activate, fetch. Registered using navigator.serviceWorker.register(). They only work over HTTPS (or localhost). They can cache static assets during install, manage cache versions during activate, and serve cached responses when offline via fetch event.",
+    "keywords": ["service worker", "offline", "cache", "network proxy", "install", "activate", "fetch event", "Cache API", "background sync", "push notifications", "HTTPS", "navigator.serviceWorker"],
+    "followUp": "How do you update a service worker when you deploy new code?",
+    "hint": "Think about background scripts and network interception."
+  },
+  {
+    "id": 25,
+    "difficulty": "hard",
+    "category": "websockets",
+    "question": "What are WebSockets and how do they differ from HTTP connections?",
+    "correctAnswer": "WebSockets provide full-duplex, bidirectional communication channels over a single persistent TCP connection. Unlike HTTP which is request-response based (client initiates each request), WebSockets allow the server to push data to the client at any time. The connection starts as an HTTP request and upgrades to WebSocket via handshake (101 Switching Protocols). Created with new WebSocket(url). Key events: open, message, close, error. Methods: send(), close(). Use cases include real-time chat, live notifications, collaborative editing, gaming, and live data feeds.",
+    "keywords": ["websocket", "full-duplex", "bidirectional", "persistent", "HTTP upgrade", "server push", "real-time", "TCP", "open event", "message event", "send method"],
+    "followUp": "How would you handle reconnection logic for a WebSocket?",
+    "hint": "Think about real-time communication and persistent connections."
+  },
+  {
+    "id": 26,
+    "difficulty": "hard",
+    "category": "CORS",
+    "question": "What is CORS and how does it work in the context of HTML and web browsers?",
+    "correctAnswer": "CORS (Cross-Origin Resource Sharing) is a browser security mechanism that restricts web pages from making requests to a different origin (domain, protocol, or port) than the one that served the web page. It uses HTTP headers: Access-Control-Allow-Origin (specifies allowed origins), Access-Control-Allow-Methods, Access-Control-Allow-Headers. For non-simple requests, browsers send a preflight OPTIONS request first. Credentials (cookies) require Access-Control-Allow-Credentials: true and the client must set credentials: 'include'. CORS is enforced by browsers, not servers.",
+    "keywords": ["CORS", "cross-origin", "Access-Control-Allow-Origin", "preflight", "OPTIONS", "origin", "browser", "same-origin policy", "headers", "credentials", "security"],
+    "followUp": "What is the difference between a simple request and a preflight request in CORS?",
+    "hint": "Think about the same-origin policy and cross-domain requests."
+  },
+  {
+    "id": 27,
+    "difficulty": "hard",
+    "category": "CSP",
+    "question": "What is Content Security Policy (CSP) and how does it protect against XSS attacks?",
+    "correctAnswer": "Content Security Policy (CSP) is a browser security feature that helps prevent XSS (Cross-Site Scripting) attacks by specifying which content sources are considered trustworthy. It is delivered via HTTP header (Content-Security-Policy) or a meta tag. Directives include: default-src (fallback), script-src (allowed script sources), style-src, img-src, connect-src, font-src, frame-src. Using 'nonce' or 'hash' allows specific inline scripts. Reporting is possible with report-uri or report-to directives. CSP prevents inline script execution and loading resources from untrusted origins.",
+    "keywords": ["CSP", "content security policy", "XSS", "cross-site scripting", "script-src", "default-src", "nonce", "hash", "inline scripts", "directives", "HTTP header", "trusted sources"],
+    "followUp": "How would you implement a strict CSP while still allowing Google Analytics?",
+    "hint": "Think about whitelisting content sources to prevent script injection."
+  },
+  {
+    "id": 28,
+    "difficulty": "hard",
+    "category": "progressive-enhancement",
+    "question": "What is progressive enhancement and how does it differ from graceful degradation?",
+    "correctAnswer": "Progressive enhancement is a web design strategy that starts with a functional baseline experience (semantic HTML) and progressively adds enhanced features for browsers that support them. Layers: HTML (structure and content), CSS (visual presentation), JavaScript (interactivity and advanced features). Graceful degradation is the opposite approach — start with the full-featured version and add fallbacks for older browsers. Progressive enhancement is generally preferred as it ensures core content is accessible to all users including those with older browsers, slow connections, or accessibility needs.",
+    "keywords": ["progressive enhancement", "graceful degradation", "baseline", "layers", "HTML", "CSS", "JavaScript", "fallback", "accessibility", "older browsers", "core content"],
+    "followUp": "Give a practical example of progressive enhancement in a form.",
+    "hint": "Think about building from basic to advanced functionality."
+  },
+  {
+    "id": 29,
+    "difficulty": "hard",
+    "category": "performance",
+    "question": "What are the best practices for optimizing HTML for performance?",
+    "correctAnswer": "HTML performance optimizations include: minimizing DOM depth and complexity, using resource hints (rel=preload, rel=prefetch, rel=preconnect, rel=dns-prefetch), lazy loading images with loading='lazy', placing scripts at bottom of body or using defer/async attributes, using async for analytics scripts, critical CSS inlining, avoiding render-blocking resources, using HTTP/2 push for critical resources, compressing HTML output, reducing number of HTTP requests, using CDNs, and implementing caching strategies.",
+    "keywords": ["performance", "preload", "prefetch", "lazy loading", "defer", "async", "render-blocking", "critical CSS", "HTTP requests", "CDN", "compress", "DOM"],
+    "followUp": "What is the difference between defer and async script attributes?",
+    "hint": "Think about how the browser loads and parses HTML resources."
+  },
+  {
+    "id": 30,
+    "difficulty": "hard",
+    "category": "SEO",
+    "question": "What HTML elements and attributes are most important for SEO?",
+    "correctAnswer": "Key HTML elements for SEO include: title tag (most important, unique per page), meta description (snippet in search results), heading hierarchy (h1-h6, one h1 per page), canonical link tag (prevent duplicate content), structured data/schema markup using JSON-LD or microdata, Open Graph and Twitter Card meta tags for social sharing, alt text for images, semantic HTML elements (article, section, nav), proper use of anchor text in links, hreflang for internationalization, robots meta tag and XML sitemap reference.",
+    "keywords": ["SEO", "title", "meta description", "h1", "canonical", "structured data", "schema", "Open Graph", "alt text", "semantic", "hreflang", "robots"],
+    "followUp": "What is the canonical tag and when should it be used?",
+    "hint": "Think about what signals search engines use to rank and understand pages."
+  },
+  {
+    "id": 31,
+    "difficulty": "easy",
+    "category": "forms",
+    "question": "What are the different input types available in HTML5?",
+    "correctAnswer": "HTML5 introduced many new input types beyond the basic text: email (validates email format), url (validates URL), number (numeric input with min/max/step), range (slider control), date/time/datetime-local/month/week (date and time pickers), color (color picker), search (search field), tel (telephone number), file (file upload). These provide native UI controls and built-in validation on supporting browsers, improving user experience without JavaScript.",
+    "keywords": ["input type", "email", "url", "number", "range", "date", "color", "search", "tel", "file", "HTML5", "validation"],
+    "followUp": "How do browsers handle unsupported input types?",
+    "hint": "Think about HTML5 form improvements."
+  },
+  {
+    "id": 32,
+    "difficulty": "medium",
+    "category": "HTML5 APIs",
+    "question": "What is the HTML5 Drag and Drop API and how does it work?",
+    "correctAnswer": "The HTML5 Drag and Drop API enables native drag-and-drop functionality. An element becomes draggable by setting draggable='true' attribute. Key events on the dragged element: dragstart, drag, dragend. Key events on the drop target: dragenter, dragover (must preventDefault to allow drop), dragleave, drop. The dataTransfer object on the event stores data during the drag. Use setData() to store data and getData() to retrieve it on drop. The effectAllowed and dropEffect properties control cursor appearance.",
+    "keywords": ["drag and drop", "draggable", "dragstart", "dragover", "drop", "dataTransfer", "setData", "getData", "preventDefault", "effectAllowed"],
+    "followUp": "Why must you call preventDefault() in the dragover event handler?",
+    "hint": "Think about native browser drag-and-drop events."
+  },
+  {
+    "id": 33,
+    "difficulty": "hard",
+    "category": "web-components",
+    "question": "How do HTML Templates and the slot element work in Web Components?",
+    "correctAnswer": "The template element holds HTML content that is not rendered until activated by JavaScript. Its content is inert — scripts don't run, images don't load, styles don't apply. Access content via template.content and clone it with cloneNode(true). The slot element is used inside Shadow DOM to create insertion points for light DOM content (content passed by the component's user). Named slots use the name attribute on slot and slot attribute on the content to match specific slots. Default slots catch unmatched content. This allows flexible component composition.",
+    "keywords": ["template", "slot", "shadow DOM", "cloneNode", "inert", "named slot", "light DOM", "composition", "insertion point", "web components"],
+    "followUp": "What is the difference between light DOM and shadow DOM?",
+    "hint": "Think about how templates provide reusable DOM structures."
+  }
+]
