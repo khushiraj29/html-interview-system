@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI HTML Interview System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="app-header">
+    <div class="header-content">
+      <div class="app-logo">🎤</div>
+      <div class="header-text">
+        <h1 class="app-title">HTML Interview Assistant</h1>
+        <p class="app-subtitle">AI-Powered Mock Interview</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Stats Bar -->
+  <div class="stats-bar" id="stats-bar">
+    <div class="stat-card">
+      <span class="stat-label">Current Score</span>
+      <span class="stat-value" id="stat-score">–</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-label">Questions Answered</span>
+      <span class="stat-value" id="stat-questions">0</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-label">Difficulty Level</span>
+      <span class="stat-value" id="stat-difficulty">–</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-label">Average Score</span>
+      <span class="stat-value" id="stat-average">–</span>
+    </div>
+  </div>
+
+  <!-- Main Container -->
+  <main class="main-container">
+    <!-- Chat Container -->
+    <div class="chat-container" id="chat-container" role="log" aria-label="Interview conversation" aria-live="polite">
+      <!-- Chat messages are dynamically inserted here -->
+    </div>
+
+    <!-- Transcript Box (live speech preview) -->
+    <div class="transcript-box" id="transcript-box" aria-live="polite" aria-label="Speech transcript">
+      <span class="live-indicator">🔴 LIVE</span>
+      <span id="transcript-text">Listening…</span>
+    </div>
+
+    <!-- Controls Section -->
+    <div class="controls-section">
+      <button class="btn btn-primary" id="start-btn" aria-label="Start Interview">
+        ▶ Start Interview
+      </button>
+
+      <button class="btn btn-mic" id="mic-btn" disabled aria-label="Toggle microphone recording">
+        🎤
+      </button>
+
+      <button class="btn btn-secondary" id="next-btn" style="display:none;" aria-label="Next Question">
+        Next Question ➜
+      </button>
+
+      <button class="btn btn-danger" id="end-btn" style="display:none;" aria-label="End Interview">
+        ✖ End Interview
+      </button>
+    </div>
+
+    <!-- Status Bar -->
+    <div class="status-bar" id="status" role="status" aria-live="polite">
+      Click "Start Interview" to begin your AI-powered HTML mock interview.
+    </div>
+
+    <!-- Text Input Fallback (shown if Speech API is not supported) -->
+    <div class="text-fallback" id="text-fallback" style="display:none;">
+      <textarea
+        id="text-input"
+        placeholder="Type your answer here…"
+        rows="4"
+        aria-label="Text answer input"
+      ></textarea>
+      <button class="btn btn-primary" id="text-submit-btn" aria-label="Submit answer">
+        Submit Answer
+      </button>
+    </div>
+  </main>
+
+  <!-- Results Modal -->
+  <div class="modal-overlay" id="results-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" style="display:none;">
+    <div class="modal-content">
+      <h2 class="modal-title" id="modal-title">🎓 Interview Complete!</h2>
+
+      <div class="score-circle" id="modal-score-circle">
+        <span id="modal-final-score">–</span>
+        <small>/10</small>
+      </div>
+
+      <p class="modal-rating" id="modal-rating"></p>
+
+      <div class="modal-stats">
+        <div class="modal-stat">
+          <span class="modal-stat-label">Total Questions</span>
+          <span class="modal-stat-value" id="modal-total-questions">0</span>
+        </div>
+        <div class="modal-stat">
+          <span class="modal-stat-label">Average Score</span>
+          <span class="modal-stat-value" id="modal-avg-score">–</span>
+        </div>
+      </div>
+
+      <div class="performance-breakdown" id="performance-breakdown">
+        <h3>Performance by Difficulty</h3>
+        <div id="breakdown-content"></div>
+      </div>
+
+      <button class="btn btn-primary" id="new-interview-btn" aria-label="Start New Interview">
+        🔄 Start New Interview
+      </button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
